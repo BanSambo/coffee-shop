@@ -26,7 +26,7 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="/img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid" th:src="@{/img/testimonial-1.jpg}" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
                             <i>Profession</i>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="/img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid" th:src="@{/img/testimonial-2.jpg}" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
                             <i>Profession</i>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="/img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid" th:src="@{/img/testimonial-3.jpg}" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
                             <i>Profession</i>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="/img/testimonial-4.jpg" alt="">
+                        <img class="img-fluid" th:src="@{/img/testimonial-4.jpg}" alt="">
                         <div class="ml-3">
                             <h4>Client Name</h4>
                             <i>Profession</i>
@@ -76,12 +76,12 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a th:href="@{#}" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
-    <script th:src="@{https://code.jquery.com/jquery-3.4.1.min.js}"></script>
-    <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script th:src="@{../static/lib/easing/easing.min.js}"></script>
     <script th:src="@{../static/lib/waypoints/waypoints.min.js}"></script>
     <script th:src="@{../static/lib/owlcarousel/owl.carousel.min.js}"></script>

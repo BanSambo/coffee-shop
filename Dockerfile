@@ -5,7 +5,11 @@ FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 # Copy the executable JAR file to the container
-COPY build/libs/shop-0.0.1-SNAPSHOT.jar /app/coffee-shop.jar
+COPY src/main/resources/static /app/static
+COPY shop-0.0.1-SNAPSHOT.jar /app/coffee-shop.jar
+
+# Copy the templates directory to the container
+COPY src/main/resources/templates /app/templates
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
