@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="~{layout :: style}"
+></head>
+
+<body>
+    <!-- Navbar Start -->
+    <div th:replace="~{layout :: navbar (contact=active)}"></div>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div th:replace="~{layout :: header(text='Contact')}"></div>
+    <!-- Page Header End -->
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
+                <h1 class="display-4">Feel Free To Contact</h1>
+            </div>
+            <div class="row px-3 pb-2">
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Address</h4>
+                    <p>123 Street, New York, USA</p>
+                </div>
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Phone</h4>
+                    <p>+012 345 6789</p>
+                </div>
+                <div class="col-sm-4 text-center mb-3">
+                    <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
+                    <h4 class="font-weight-bold">Email</h4>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 pb-5">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1954.1150914499115!2d104.9309304966404!3d11.60693218309135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skh!4v1724389796645!5m2!1sen!2skh"  style="width: 100%; height: 443px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 pb-5">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Your Name"
+                                    required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Your Email"
+                                    required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div th:replace="~{layout :: footer}"></div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/lib/easing/easing.min.js"></script>
+    <script src="../static/lib/waypoints/waypoints.min.js"></script>
+    <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="../static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="../static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
